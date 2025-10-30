@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de Muertos y La Catrina</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #8b5b33, #8b5b33, #8b5b33);
+            color: #FFF;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 2px solid #FF9800;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #FF9800;
+        }
+        
+        nav {
+            background: rgba(255, 152, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: #FFC107;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #FF5722;
+            text-decoration: underline;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #FF9800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #FF5722;
+            margin: 25px 0 15px;
+            border-left: 4px solid #FF9800;
+            padding-left: 10px;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: #FFC107;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        .catrina-img {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 5px solid #FF9800;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .quote {
+            font-style: italic;
+            background-color: rgba(255, 152, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #FF5722;
+        }
+        
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .place-card {
+            background: rgba(255, 152, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid #FF9800;
+        }
+        
+        .place-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        
+        .price {
+            color: #FFC107;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        
+        .external-link {
+            color: #4FC3F7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .external-link:hover {
+            text-decoration: underline;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px solid #FF9800;
+            transition: transform 0.3s;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #FF9800;
+            font-size: 0.9rem;
+            color: #FFC107;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Día de Muertos</h1>
+            <p>𝔘𝔫𝔞 𝔠𝔢𝔩𝔢𝔟𝔯𝔞𝔠𝔦ó𝔫 𝔪𝔢𝔵𝔦𝔠𝔞𝔫𝔞 𝔡𝔢 𝔳𝔦𝔡𝔞 𝔶 𝔪𝔢𝔪𝔬𝔯𝔦𝔞</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#origen">Origen</a></li>
+                <li><a href="#tradiciones">Tradiciones</a></li>
+                <li><a href="#catrina">La Catrina</a></li>
+                <li><a href="#lugares">Lugares Turísticos</a></li>
+               
+            </ul>
+        </nav>
+        
+        <section id="origen">
+            <h2>Origen del Día de Muertos</h2>
+            <p>El Día de Muertos es una celebración mexicana de origen prehispánico que honra a los difuntos. Comienza el 1 de noviembre y coincide con las celebraciones católicas del Día de los Fieles Difuntos y Todos los Santos.</p>
+            <p>Los orígenes de esta celebración en México son anteriores a la llegada de los españoles. Hay registro de celebraciones en las etnias mexica, maya, purépecha y totonaca desde hace al menos 3,000 años.</p>
+            
+            <div class="image-container">
+                <img src="https://www.nmas.com.mx/_next/image/?url=https%3A%2F%2Fstatic-live.nmas.com.mx%2Fnmas-news%2Fstyles%2Fcorte_16_9%2Fcloud-storage%2F2025-10%2Fofrenda-dia-de-muertos-2025-significado.jpg%3Fh%3D920929c4%26itok%3DgrtdN3-H&w=1920&q=75" alt="Ofrenda de Día de Muertos" class="catrina-img">
+            </div>
+        </section>
+        
+        <section id="tradiciones">
+            <h2>Tradiciones</h2>
+            <p>Las tradiciones incluyen altares u ofrendas con alimentos y objetos favoritos de los difuntos, la flor de cempasúchil, calaveritas de azúcar, pan de muerto y papel picado.</p>
+            
+            <div class="gallery">
+                <img src="https://i.blogs.es/c4a2f9/calaveritas/450_1000.jpg" alt="Calaveritas de azúcar">
+                <img src="https://lecaroz.com/wp-content/uploads/2024/09/pan-de-muerto-tradicional-panaderia-lecaroz.jpg" alt="Pan de muerto">
+                <img src="https://oem.com.mx/elsoldepuebla/img/19291689/1635253814/BASE_LANDSCAPE/1200/image.webp" alt="Flor de cempasúchil">
+                <img src="https://i.etsystatic.com/10969589/r/il/22c750/1384659421/il_570xN.1384659421_cvwr.jpg" alt="Papel picado">
+            </div>
+        </section>
+        
+        <section id="catrina">
+            <h2>Origen de La Catrina</h2>
+            <p>La Catrina, originalmente llamada La Calavera Garbancera, es una figura creada por el artista José Guadalupe Posada y bautizada por el muralista Diego Rivera.</p>
+            <p>La imagen surgió como una crítica social durante el porfiriato, cuando las clases indígenas enriquecidas pretendían imitar el estilo de vida europeo, rechazando sus propias raíces.</p>
+            
+            <div class="quote">
+                "La muerte es democrática, ya que a fin de cuentas, güera, morena, rica o pobre, toda la gente acaba siendo calavera." - José Guadalupe Posada
+            </div>
+            
+            <p>Diego Rivera, en su mural "Sueño de una tarde dominical en la Alameda Central" (1947), le dio el nombre de "La Catrina" y la vistió de manera elegante, con sombrero de plumas y vestido de la época victoriana.</p>
+            
+            <div class="image-container">
+                <img src="https://i.pinimg.com/originals/17/0f/28/170f28a2bbb1c56e62979585baa1cd5f.jpg" alt="La Catrina" class="catrina-img">
+            </div>
+        </section>
+        
+        <section id="lugares">
+            <h2>Lugares Turísticos para Vivir el Día de Muertos</h2>
+            <p>Descubre los mejores lugares en México para experimentar la magia del Día de Muertos:</p>
+            
+            <div class="places-grid">
+                <div class="place-card">
+                    <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2025/08/Dia-de-Muertos-en-Janitzio-PORADA-900x675.png" alt="Michoacán">
+                    <h3>Michoacán - Pátzcuaro</h3>
+                    <p>Famosa por su celebración en la Isla de Janitzio con velas y ofrendas en el lago.</p>
+                    <p class="price">Costo aproximado: $50 - $100 MXN</p>
+                    <a href="https://www.visitmexico.com" class="external-link" target="_blank">Más información</a>
+                </div>
+                
+                <div class="place-card">
+                    <img src="https://blog.alamo.com.mx/blog/wp-content/uploads/2025/09/celebrating-the-day-of-the-dead-in-oaxaca-01.jpeg" alt="Oaxaca">
+                    <h3>Oaxaca - Mercados y Comparsas</h3>
+                    <p>Con sus impresionantes altares y coloridas comparsas por las calles.</p>
+                    <p class="price">Costo aproximado: $0 - $30 MXN</p>
+                    <a href="https://www.oaxaca.travel" class="external-link" target="_blank">Más información</a>
+                </div>
+                
+                <div class="place-card">
+                    <img src="https://assets.isu.pub/document-structure/241103161444-0c3b4c819f7614c2a263c2b8e2da536f/v1/9de16afedfcd54b459f8fbae1717bbad.jpeg" alt="Ciudad de México">
+                    <h3>Ciudad de México - Mixquic</h3>
+                    <p>Conocido por su alumbrado con velas en el panteón y su famosa "Huesuda".</p>
+                    <p class="price">Costo aproximado: $20 - $50 MXN</p>
+                    <a href="https://mexicocity.cdmx.gob.mx" class="external-link" target="_blank">Más información</a>
+                </div>
+                
+                <div class="place-card">
+                    <img src="https://transpais.com.mx/wp-content/uploads/2024/10/Xantolo_-Un-viaje-lleno-de-tradicion.jpeg" alt="San Luis Potosí">
+                    <h3>San Luis Potosí - Xantolo</h3>
+                    <p>Celebración única en la Huasteca Potosina con danzas tradicionales y altares comunitarios.</p>
+                    <p class="price">Costo aproximado: $30 - $80 MXN</p>
+                    <a href="https://www.visitmexico.com" class="external-link" target="_blank">Más información</a>
+                </div>
+            </div>
+        </section>
+      
